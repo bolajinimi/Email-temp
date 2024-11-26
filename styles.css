@@ -1,0 +1,274 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    width: 80px;
+  }
+  
+  .hero {
+    background: url('bg.png') center center / cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48.4px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white; 
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  .content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #666; 
+    margin-bottom: 20px; 
+  }
+  .content .user-name {
+    font-weight: bold;
+    color: #666; 
+  }
+  
+  h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 30px 15px;
+    }
+  
+    .hero h1 {
+        font-size: 32px; 
+        line-height: 40px;
+    }
+    .content p {
+        font-size: 16px; /* Slightly smaller text for mobile */
+        line-height: 24px;
+        text-align: center; /* Center-align text on smaller screens */
+      }
+  
+    h2 {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  }
+
+  /* Features Section */
+  .features-section {
+    padding: 20px;
+  }
+  
+  .features-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.04px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: linear-gradient(45deg, #ff007a, #8000ff); /* Gradient colors for the text */
+    -webkit-background-clip: text; /* Clip the background to text */
+    color: transparent; /* Make the text color transparent so the gradient shows */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+
+.features-list {
+    display: flex;
+    flex-direction: column; /* Stack the features vertically */
+    align-items: flex-start; /* Align the features to the left by default */
+    gap: 20px;
+  }
+  /* .feature {
+    margin-bottom: 10px;
+  } */
+  
+  .feature h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333; /* Set a color for the feature titles */
+  }
+  
+  .feature p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666; /* Set a color for the feature descriptions */
+    line-height: 1.5;
+  }
+  .cta-container {
+    width: 100%; /* Full width of the parent */
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+  }
+  
+  /* .cta-button {
+    background: linear-gradient(90deg, #8000ff, #ff007a);
+    color: white;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  } */
+  
+  .cta-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(45deg, #ff007a, #8000ff);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+  }
+
+  .cta-button:hover {
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  background: linear-gradient(45deg, #8000ff, #ff007a); /* Inverted gradient for hover effect */
+}
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .features-section h2 {
+        font-size: 20px; /* Slightly smaller font size on mobile */
+        line-height: 24px;
+        text-align: center; /* Center-align on smaller screens */
+      }
+      
+      .features-list {
+        display: flex;
+        flex-direction: column; /* Stack features vertically */
+        align-items: center; /* Center align the features */
+        gap: 15px; /* Adjust spacing between features */
+        margin-bottom: 30px; /* Add some space at the bottom of the list */
+      }
+
+  .feature h3 {
+    font-size: 18px;
+    text-align: center; /* Center the feature title */
+  }
+
+  .feature p {
+    font-size: 14px; /* Smaller font size for mobile */
+    text-align: center; /* Center-align the feature description */
+  }
+    .cta-button {
+      font-size: 16px;
+      padding: 12px 30px;
+    }
+  }
+
+  /* Footer Section */
+.footer {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    color: #666;
+  }
+  
+  .footer-logo img {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .footer-logo p {
+    margin: 0;
+    color: #999;
+    font-size: 1rem;
+  }
+  
+  .footer-socials {
+    margin: 20px 0;
+  }
+  
+  .footer-socials a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+  }
+  
+  .footer-socials a img:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-links {
+    margin: 20px 0;
+  }
+  
+  .footer-links a {
+    color: #8000ff;
+    margin: 0 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ff007a;
+  }
+  
+  .footer-info p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #999;
+  }
+  
+  .footer-info p strong {
+    color: #333;
+  }
+  
+  
